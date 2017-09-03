@@ -72,76 +72,23 @@ public class SlideOutMenu extends RelativeLayout {
 
     private OnCloseListener mCloseListener;
 
-    /**
-     * The listener interface for receiving onOpen events.
-     * The class that is interested in processing a onOpen
-     * event implements this interface, and the object created
-     * with that class is registered with a component using the
-     * component's <code>addOnOpenListener<code> method. When
-     * the onOpen event occurs, that object's appropriate
-     * method is invoked
-     */
     interface OnOpenListener {
-
-        /**
-         * On open.
-         */
         void onOpen();
     }
 
-    /**
-     * The listener interface for receiving onOpened events.
-     * The class that is interested in processing a onOpened
-     * event implements this interface, and the object created
-     * with that class is registered with a component using the
-     * component's <code>addOnOpenedListener<code> method. When
-     * the onOpened event occurs, that object's appropriate
-     * method is invoked.
-     *
-     */
     public interface OnOpenedListener {
         void onOpened();
     }
 
-    /**
-     * The listener interface for receiving onClose events.
-     * The class that is interested in processing a onClose
-     * event implements this interface, and the object created
-     * with that class is registered with a component using the
-     * component's <code>addOnCloseListener<code> method. When
-     * the onClose event occurs, that object's appropriate
-     * method is invoked.
-     *
-     */
     interface OnCloseListener {
         void onClose();
     }
 
-    /**
-     * The listener interface for receiving onClosed events.
-     * The class that is interested in processing a onClosed
-     * event implements this interface, and the object created
-     * with that class is registered with a component using the
-     * component's <code>addOnClosedListener<code> method. When
-     * the onClosed event occurs, that object's appropriate
-     * method is invoked.
-     *
-     */
     public interface OnClosedListener {
         void onClosed();
     }
 
-    /**
-     * The Interface CanvasTransformerBuilder.
-     */
     interface CanvasTransformer {
-
-        /**
-         * Transform canvas.
-         *
-         * @param canvas the canvas
-         * @param percentOpen the percent open
-         */
         void transformCanvas(Canvas canvas, float percentOpen);
     }
 

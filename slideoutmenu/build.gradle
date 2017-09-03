@@ -1,5 +1,29 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'libs'
+    bintrayName = 'SlideOutMenu-Android'
+
+    publishedGroupId = 'com.gintechsystems.libs'
+    libraryName = 'SlideOutMenu'
+    artifact = 'slideoutmenu'
+
+    libraryDescription = 'GINtech System\'s SlideOutMenu. (Based off https://github.com/jfeinstein10/SlidingMenu)'
+
+    siteUrl = 'https://github.com/gintechsystems/SlideOutMenu-Android'
+    gitUrl = 'https://github.com/gintechsystems/SlideOutMenu-Android.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'gintechsystems'
+    developerName = 'GINtech Systems LLC'
+    developerEmail = 'support@gintechsystems.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 25
     buildToolsVersion "26.0.1"
@@ -15,13 +39,20 @@ android {
 
 buildscript {
     repositories {
+        jcenter()
         mavenCentral()
     }
+
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
     }
 }
 
 dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
