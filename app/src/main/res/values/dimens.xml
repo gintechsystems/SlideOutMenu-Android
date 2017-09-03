@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="menu_offset">100dp</dimen>
+    <dimen name="menu_shadow_width">15dp</dimen>
+</resources>
