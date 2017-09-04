@@ -6,4 +6,9 @@ Hello, here you can find a refined version of the old SlidingMenu from jfeinstei
 
 I would like to maintain this project as it was always a very valuable library to me. I appreciate all the work that jfeinstein10 has done for us. If anyone does pull requests or has issues let me know, I will definitely keep an eye on them!
 
+
 Please come back soon as I will update this README with How-To & Usage.
+
+# Usage:
+
+![Alt Text](https://media.giphy.com/media/3ohhwuNF99W1QIAptS/giphy.gif)
