@@ -1,4 +1,5 @@
-# SlideOutMenu-Android
+SlideOutMenu-Android
+=======
 
 [![Build Status](https://travis-ci.org/gintechsystems/SlideOutMenu-Android.svg?branch=master)](https://travis-ci.org/gintechsystems/SlideOutMenu-Android)
 
@@ -9,6 +10,23 @@ I would like to maintain this project as it was always a very valuable library t
 
 Please come back soon as I will update this README with How-To & Usage.
 
-# Usage:
+Demo
+--------
 
 ![Alt Text](https://media.giphy.com/media/3ohhwuNF99W1QIAptS/giphy.gif)
+
+Download
+--------
+
+Gradle:
+```groovy
+compile 'com.gintechsystems.libs:slideoutmenu:1.0.0'
+```
+Maven:
+```xml
+<dependency>
+  <groupId>com.gintechsystems.libs</groupId>
+  <artifactId>slideoutmenu</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
